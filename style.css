@@ -1,31 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap');
 
+:root {
+    font-family: "Roboto";
+    font-size: 16px;
+    --bg: #353535;
+    --nav-bg: #1a2323;
+    --focus: #4169e1;
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: "Roboto";
 }
 
 body {
-    background-color: rgb(53, 53, 53);
+    background-color: white;
+    background-image: linear-gradient(to bottom right, royalblue, aquamarine);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 /* nav-bar */
-
-.header {
-    background-color: rgb(26, 35, 35);
-    padding-top: 0.1em;
-    padding-bottom: 1em;
-}
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1% 1% 0 1%;
-    position: sticky;
-    top: 0;
-    background-color: rgb(26, 35, 35);
+    margin-top: 1%;
+    margin-bottom: 0;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: var(--nav-bg);
+    padding: 1.5%;
+    border-radius: 10px;
 }
 
 .logo {
@@ -40,31 +47,28 @@ nav ul li{
     align-items: center;
 }
 
-nav ul li a, button a {
+nav ul li span a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     transition: all 0.5s;
 }
 
-nav ul li a:hover {
-    color: rgb(0, 162, 255);
+nav ul li span a:hover, .kosar:hover>a {
+    color: var(--focus);
 }
 
 .kosar {
-    display: inline-block;
     border: none;
     border-radius: 50px;
-    background-color: rgb(48, 37, 103);
-    width: 5em;
+    background-color: var(--focus);
     padding: 0.5em;
     width: 7em;
     color: white;
-    font-size: 0.9em;
     transition: all 0.5s;
 }
 
 .active-lap {
-    color: rgb(0, 162, 255);
+    color: var(--focus);
 }
 
 .bi-bag-check {
@@ -72,6 +76,41 @@ nav ul li a:hover {
 }
 
 .kosar:hover {
-    background-color: rgb(57, 49, 96);
+    background-color: #393160;
     box-shadow: white 0px 0px 10px;
+}
+
+.container {
+    margin: 1%;
+    display: flex;
+    width: 98%;
+    height: 200vh;
+    flex-direction: row;
+}
+
+.collumn {
+    height: 98%;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    padding: 1%;
+}
+
+.item{
+    margin: 8% auto auto auto;
+    width: 90%;
+    height: 30%;
+    border: 1px solid black;
+    background-color: aquamarine;
+}
+
+#top-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    color: white;
+    background-color: #353535;
 }
