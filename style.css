@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+
+body {
+    background-color: rgb(53, 53, 53);
+}
+
+/* nav-bar */
+
+.header {
+    background-color: rgb(26, 35, 35);
+    padding-top: 0.1em;
+    padding-bottom: 1em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1% 1% 0 1%;
+    position: sticky;
+    top: 0;
+    background-color: rgb(26, 35, 35);
+}
+
+.logo {
+    width: 10vw;
+    filter: invert(1);
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 1vw 0 1vw;
+    align-items: center;
+}
+
+nav ul li a, button a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+
+nav ul li a:hover {
+    color: rgb(0, 162, 255);
+}
+
+.kosar {
+    display: inline-block;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(48, 37, 103);
+    width: 5em;
+    padding: 0.5em;
+    width: 7em;
+    color: white;
+    font-size: 0.9em;
+    transition: all 0.5s;
+}
+
+.active-lap {
+    color: rgb(0, 162, 255);
+}
+
+.bi-bag-check {
+    margin: 0 0.3em 0 0;
+}
+
+.kosar:hover {
+    background-color: rgb(57, 49, 96);
+    box-shadow: white 0px 0px 10px;
+}
