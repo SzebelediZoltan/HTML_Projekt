@@ -66,7 +66,7 @@ nav ul li span a:hover, .kosar:hover>a {
     color: var(--focus);
 }
 
-.bi-bag-check {
+.bi-bag-check{
     margin: 0 0.3em 0 0;
 }
 
@@ -105,6 +105,8 @@ nav ul li span a:hover, .kosar:hover>a {
     background-color: blue;
     align-content: flex-start;
     gap: 1%;
+    scroll-behavior:auto;
+    overflow-y: scroll;
 }
 
 
@@ -114,7 +116,7 @@ nav ul li span a:hover, .kosar:hover>a {
     box-sizing: border-box;
     background-color: white;
     border-radius: 10px;
-    border: #1a2323 solid 0.2vw;
+    border: #1a2323 solid 2px;
     transition: 0.5s all;
 }
 
@@ -122,19 +124,24 @@ nav ul li span a:hover, .kosar:hover>a {
     border: #4169e1 solid 2px;
     box-shadow: white 0 0 10px;
 }
+
 .card-img {
     width: 100%;
-padding: none;
-    border-radius: 6px;
+    border-radius: 8px 8px 0 0;
 }
 
 .card-body{
     padding: 0.6vw;
 }
 
+.cardhr {
+    border-top: #4169e1 1px solid;
+}
+
 .card-body h5 {
     font-size: 1.8vw;
     font-weight: bold;
+    overflow: hidden;
 }
 
 .card-body p {
@@ -143,29 +150,15 @@ padding: none;
 }
 
 .card-body button {
-    width: 8vw;
-    height: 2vw;
+    font-size: 1.5vw;
+    height: 3vw;
+    width: 3vw;
     border: 1.5px solid black;
-    border-radius: 25px;
+    border-radius: 50px;
     background-color: rgb(2, 245, 241);
-    font-size: 0.8vw;
-    display: block;
     position: relative;
     float: right;
-    top: 9.9em;
-}
-
-.card-body button {
-    width: 8vw;
-    height: 2vw;
-    border: 1.5px solid black;
-    border-radius: 25px;
-    background-color: rgb(2, 245, 241);
-    font-size: 0.8vw;
-    display: block;
-    position: relative;
-    float: right;
-    top: 9.9em;
+    top: 7.2vw;
     transition: all 1s;
 }
 
