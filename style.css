@@ -18,7 +18,7 @@ body {
     background-image: linear-gradient(to top, black, transparent), url(képek/fold.jpg);
     background-repeat: no-repeat, no-repeat;
     background-size: cover, cover;
-    background-attachment: fixed, fixed;
+    background-attachment: scroll, fixed;
 }
 
 /* nav-bar */
@@ -82,9 +82,16 @@ nav ul li span a:hover, .kosar:hover>a {
 
 /* filter, holder */
 
+.p-body {
+    background-image: linear-gradient(to top, black, transparent), url(képek/fold.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-attachment: scroll, scroll;
+}
+
 .f-p {
     display: flex;
-    height: 100vw;
+    height: 100vh;
     margin: 1vw;
     gap: 1vw;
 }
@@ -96,17 +103,22 @@ nav ul li span a:hover, .kosar:hover>a {
 }
 
 .card-holder {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    color: black;
     border: #1a2323 solid 2px;
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
-    padding: 1vw;
+    padding: 1%;
     flex: 5;
-    background-color: blue;
+    background-image: url(képek/szineshatter.jpg);
     align-content: flex-start;
     gap: 1%;
-    scroll-behavior:auto;
-    overflow-y: scroll;
+}
+
+.c-title {
+    overflow-x: ;
 }
 
 
@@ -370,6 +382,12 @@ a {
     border-color: white;
 }
 
+.insta {
+    width: 15px;
+    filter: invert(0.7);
+    
+}
+
 /* Egyéb */
 
 #top-btn {
@@ -380,6 +398,10 @@ a {
     height: 50px;
     border-radius: 100%;
     z-index: 3;
-    color: white;
     background-color: #353535;
+}
+
+#top-btn>svg {
+    height: 40px;
+    filter: invert(1);
 }
