@@ -55,7 +55,7 @@ nav ul li span a:hover, .kosar:hover>a {
     color: var(--focus);
 }
 
-.kosar {
+.kosar, .active-kosar {
     font-size: 1.1vw;
     border: none;
     border-radius: 50px;
@@ -72,14 +72,112 @@ nav ul li span a:hover, .kosar:hover>a {
     margin: 0 0.3em 0 0;
 }
 
-.kosar:hover {
+.kosar:hover{
     background-color: #393160;
     box-shadow: white 0px 0px 10px;
+}
+
+li .active-kosar {
+    background-color: gray;
+}
+
+li .active-kosar a {
+    display: none;
 }
 
 .logo {
     width: 10vw;
     filter: invert(1);
+}
+
+/* CART: egész */
+
+.kosar-lap {
+    width: 92%;
+    margin: auto;
+    position: relative;
+    top: 5%;
+}
+
+.kosar-irany{
+    text-align: center;
+    margin-bottom: 2%;
+    color: #1b1b1b;
+    font-size: 1.3em;
+}
+
+.kosar-irany p span {
+    color: white; 
+}
+
+.kosar-stat {
+    display: flex;
+    gap: 1%;
+    height: 100%;
+}
+
+.kosar-tart {
+    flex: 1;
+}
+
+.kosar-kisz {
+    padding: 1.5%;
+    background-color: #1a2323;
+    margin-bottom: 2%;
+    border-radius: 10px;
+}
+
+.kosar-kisz-bel {
+    padding: 1.5%;
+    line-height: 150%;
+    background-color: #3b3f3f;
+    border-radius: 15px;
+}
+
+.kosar-kisz-bel p {
+    color: #7a7a8c;
+}
+
+.kosar-term {
+    border-radius: 10px;
+    background-color: #1a2323;
+}
+
+.kosar-ar {
+    background-color: #1a2323;
+    padding: 1%;
+    height:fit-content;
+    border-radius: 10px;
+}
+
+.kosar-ar .ar {
+    text-align: end;
+}
+
+.kosar-kifizet {
+    display: grid;
+    margin: auto;
+    align-items: center;
+    margin-top: 5%;
+    text-align: center;
+    height: 4.6em;
+    width: 90%;
+    font-weight: bold;
+    border: #5e4fa8 solid 3px;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+.kosar-kifizet:hover {
+    border: #6142ff solid 4px;
+    box-shadow: white 0px 0px 10px;
+    transform: scale(1.02)
+
+}
+
+.kosar-ar .kosar-kupon {
+    margin-top: 2%;
+    color:#7a7a8c;
 }
 
 /* PRODUCTS: filter, holder */
@@ -180,9 +278,9 @@ nav ul li span a:hover, .kosar:hover>a {
     transform: scale(1.1)
 }
 
-/* home, users */
+/* home, users, cart*/
 
-.h-main, .u-main {
+.h-main, .u-main, .c-main{
     height: 100vh;
 }
 
