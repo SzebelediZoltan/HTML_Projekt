@@ -18,7 +18,7 @@ body {
     background-image: linear-gradient(to top, black, transparent), url(képek/fold.jpg);
     background-repeat: no-repeat, no-repeat;
     background-size: cover, cover;
-    background-attachment: scroll, fixed;
+    background-attachment: fixed, fixed;
 }
 
 /* nav-bar */
@@ -98,7 +98,7 @@ nav ul li span a:hover, .kosar:hover>a {
 
 .filter {
     flex: 1;
-    background-color: green;
+    background: linear-gradient(to bottom, #1a2323, 80%, transparent);
     border-radius: 10px;
 }
 
@@ -112,17 +112,15 @@ nav ul li span a:hover, .kosar:hover>a {
     flex-wrap: wrap;
     padding: 1%;
     flex: 5;
-    background-image: url(képek/szineshatter.jpg);
+    background: linear-gradient(to bottom, #1a2323, 70%, transparent);
     align-content: flex-start;
     gap: 1%;
 }
 
-.c-title {
-    overflow-x: ;
-}
-
-
 .c {
+    overflow-x: scroll;
+    box-sizing: border-box;
+    max-width: 19%;
     height: 25vw;
     flex-basis: 19%;
     box-sizing: border-box;
@@ -135,6 +133,7 @@ nav ul li span a:hover, .kosar:hover>a {
 .c:hover {
     border: #4169e1 solid 2px;
     box-shadow: white 0 0 10px;
+    transform: scale(1.05)
 }
 
 .c-img {
@@ -153,7 +152,7 @@ nav ul li span a:hover, .kosar:hover>a {
 .c-body h5 {
     font-size: 1.8vw;
     font-weight: bold;
-    overflow: hidden;
+    overflow:auto;
 }
 
 .c-body p {
@@ -176,6 +175,7 @@ nav ul li span a:hover, .kosar:hover>a {
 
 .c-body button:hover {
     box-shadow: #4169e1 0 0 10px;
+    transform: scale(1.1)
 }
 
 .h-main, .s-main {
@@ -187,15 +187,38 @@ nav ul li span a:hover, .kosar:hover>a {
     text-align: center;
     position: relative;
     top: 20%;
-    font-size: 42px;
+    font-size: 280%;
 }
 
 .h-h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     position: relative;
-    top: 25%;
-    font-size: 12px;
+    top: 23%;
+    font-size: 75%;
+}
+
+.h-bemutato {
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    position: relative;
+    top: 40%;
+    padding: 2%;
+    background-image: linear-gradient(to right, #1a2323, 50%, transparent);
+}
+
+.h-p-bemutato {
+    font-size: 140%;
+    font-weight: bold;
+}
+
+.hr-bemutato {
+    margin-bottom: 0.8%;
+}
+
+.h-ul-bemutato {
+    font-style: italic;
 }
 
 .s-section {
@@ -217,7 +240,7 @@ nav ul li span a:hover, .kosar:hover>a {
 }
 
 .a-main {
-    height: 100vh;
+    height: 100%;
 }
 
 a {
@@ -228,6 +251,7 @@ a {
     display: flex;
     padding: 3rem;
     overflow-x: scroll;
+    scrollbar-width: 0%;
 }
 
 .card-list::-webkit-scrollbar {
