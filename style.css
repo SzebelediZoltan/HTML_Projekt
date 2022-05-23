@@ -14,11 +14,13 @@
     padding: 0;
 }
 
+/* body */
+
 body {
     background-image: linear-gradient(to top, black, transparent), url(képek/fold.jpg);
     background-repeat: no-repeat, no-repeat;
     background-size: cover, cover;
-    background-attachment: fixed, fixed;
+    background-attachment: scroll, fixed;
 }
 
 /* nav-bar */
@@ -80,7 +82,7 @@ nav ul li span a:hover, .kosar:hover>a {
     filter: invert(1);
 }
 
-/* filter, holder */
+/* PRODUCTS: filter, holder */
 
 .p-body {
     background-image: linear-gradient(to top, black, transparent), url(képek/fold.jpg);
@@ -178,16 +180,20 @@ nav ul li span a:hover, .kosar:hover>a {
     transform: scale(1.1)
 }
 
-.h-main, .s-main {
+/* home, users */
+
+.h-main, .u-main {
     height: 100vh;
 }
+
+/* home */
 
 .h-h1 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     position: relative;
     top: 20%;
-    font-size: 280%;
+    font-size: 250%;
 }
 
 .h-h2 {
@@ -195,7 +201,15 @@ nav ul li span a:hover, .kosar:hover>a {
     text-align: center;
     position: relative;
     top: 23%;
-    font-size: 75%;
+    font-size: 150%;
+}
+
+.h-h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    position: relative;
+    top: 26%;
+    font-size: 100%;
 }
 
 .h-bemutato {
@@ -221,27 +235,7 @@ nav ul li span a:hover, .kosar:hover>a {
     font-style: italic;
 }
 
-.s-section {
-    margin: 5% auto 0 auto;
-	width: 600px;
-    height: 800px;
-    background-color: ivory;
-
-}
-
-.s-section>h1, .s-section>h3 {
-    text-align: center;
-    line-height: 50px;
-}
-
-.s-section>input {
-    text-align: center;
-    margin: auto;
-}
-
-.a-main {
-    height: 100%;
-}
+/* users */
 
 a {
     text-decoration: none;
@@ -377,13 +371,18 @@ a {
 }
 
 .tags {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
     margin: 1rem 0 2rem;
     padding: .5rem 0 1rem;
     line-height: 2;
     margin-bottom: 0;
 }
 
-.tags a {
+.tags .insta, .tags .projekt {
+    display: flex;
     font-style: normal;
     font-weight: 700;
     font-size: .5rem;
@@ -396,21 +395,19 @@ a {
     position: relative;
 }
 
-.tags a:hover {
+.tags .projekt:hover {
     background: linear-gradient(90deg,#ff8a00,#e52e71);
     text-shadow: none;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    -webkit-box-decoration-break: clone;
     background-clip: text;
-    border-color: white;
 }
 
-.insta {
-    width: 15px;
-    filter: invert(0.7);
-    
+.insta-logo {
+    fill: #7a7a8c;
+    width: 1rem;
 }
+
 
 /* Egyéb */
 
