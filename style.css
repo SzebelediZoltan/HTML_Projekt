@@ -218,7 +218,6 @@ li .active-kosar a {
 }
 
 .c {
-    overflow-x: scroll;
     box-sizing: border-box;
     max-width: 19%;
     height: 25vw;
@@ -252,7 +251,20 @@ li .active-kosar a {
 .c-body h5 {
     font-size: 1.8vw;
     font-weight: bold;
-    overflow:auto;
+    overflow-x: visible;
+}
+
+.c-body h5:hover {
+    animation: title-scroll 5s linear infinite;
+}
+
+@keyframes title-scroll {
+    from {
+
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 .c-body p {
@@ -481,6 +493,8 @@ a {
 
 .tags .insta, .tags .projekt {
     display: flex;
+    height: 20px;
+    align-items: center;
     font-style: normal;
     font-weight: 700;
     font-size: .5rem;
@@ -493,7 +507,7 @@ a {
     position: relative;
 }
 
-.tags .projekt:hover {
+.tags .projekt:hover, .tags .insta:hover {
     background: linear-gradient(90deg,#ff8a00,#e52e71);
     text-shadow: none;
     -webkit-text-fill-color: transparent;
@@ -503,9 +517,8 @@ a {
 
 .insta-logo {
     fill: #7a7a8c;
-    width: 1rem;
+    font-size: 150%;
 }
-
 
 /* Egyéb */
 
