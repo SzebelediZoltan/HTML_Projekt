@@ -64,18 +64,34 @@
                                 <td>Ár</td>
                                 <td>Darab</td>
                                 <td>Összesen</td>
+                                <td></td>
                             </tr>
                             <tr class="kosar-tb-term">
-                                <td><img src="" alt=""></td>
-                                <td>2000Ft</td>
-                                <td>1</td>
-                                <td>2000Ft</td>
+                                <td>Valami1</td>
+                                <td class="kosar-arr">1500Ft</td>
+                                <td class="kosar-darab"><input class="darab" type="number" min="1" value="2"></td>
+                                <td class="kosar-total">2000Ft</td>
+                                <td class="kosar-torles"><button class="torles">Törlés</button></td>
+                            </tr>
+                            <tr class="kosar-tb-term">
+                                <td>Valami2</td>
+                                <td class="kosar-arr">3100Ft</td>
+                                <td class="kosar-darab"><input class="darab" type="number" min="1" value="2"></td>
+                                <td class="kosar-total">2000Ft</td>
+                                <td class="kosar-torles"><button class="torles">Törlés</button></td>
+                            </tr>
+                            <tr class="kosar-tb-term">
+                                <td>Valami3</td>
+                                <td class="kosar-arr">2500Ft</td>
+                                <td class="kosar-darab"><input class="darab" type="number" min="1" value="2"></td>
+                                <td class="kosar-total">2000Ft</td>
+                                <td class="kosar-torles"><button class="torles">Törlés</button></td>
                             </tr>
                         </table>
                     </div>
                 </div>
                 <div class="kosar-ar">
-                    <h2>Totális ár: </h2> <h2 class="ar"> 42.000HUF</h2>
+                    <h2>Totális ár: </h2> <h2 class="ar">0Ft</h2>
                     <hr class="kosar-hr">
                     <a href="#"><button class="kosar-kifizet">Kifizetés</button></a>
                     <p class="kosar-kupon">Kuponokat a következő menüpontban alkalmazhatod</p>
@@ -90,5 +106,7 @@
             </svg>
         </button>
     </a>
+
+    <script src="script.js"></script>
 </body>
 </html>

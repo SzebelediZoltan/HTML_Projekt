@@ -141,6 +141,7 @@ li .active-kosar a {
 .kosar-term {
     border-radius: 10px;
     background-color: #1a2323;
+    padding: 1%;
 }
 
 .kosar-ar {
@@ -184,23 +185,51 @@ li .active-kosar a {
     width: 100%;
 }
 
-.kosar-term {
-    padding: 1%;
-}
-
 .kosar-tb-cim th {
     padding-bottom: 0.7%;
     font-size: 1.5em;
-    text-align: start;
+    text-align:start;
     font-weight: bold;
 }
 
-.kosar-tb-stat td{
+.kosar-tb-stat td {
     border-bottom: white dashed 2px;
 }
 
 .kosar-tb-term td{
     padding-top: 1%;
+}
+
+
+.kosar-total {
+    width: 15%; 
+}
+
+.kosar-darab {
+    width: 20%;
+}
+
+.kosar-darab input {
+    width: 20%;
+}
+
+.kosar-torles {
+    width: 5%;
+    text-align: center;
+}
+
+.kosar-torles button {
+    width: 100%;
+    background-color: rgb(255, 72, 72);
+    border: black solid 1px;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.5s;
+}
+
+.kosar-torles button:hover {
+    box-shadow: white 0 0 10px;
+    transform: scale(1.1);
 }
 
 /* PRODUCTS: filter, holder */
@@ -258,6 +287,9 @@ li .active-kosar a {
     transform: scale(1.05)
 }
 
+.c-ar-vas {
+}
+
 .c-img {
     width: 100%;
     border-radius: 8px 8px 0 0;
@@ -306,6 +338,14 @@ li .active-kosar a {
     float: right;
     top: 7.2vw;
     transition: all 1s;
+}
+
+.c-ar {
+    position: relative;
+    float: left;
+    top: 7.7vw;
+    font-size: 1.6em;
+    color: rgb(6, 183, 0);
 }
 
 .c-body button:hover {
