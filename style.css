@@ -288,6 +288,7 @@ li .active-kosar a {
 }
 
 .c-ar-vas {
+    
 }
 
 .c-img {
@@ -297,6 +298,7 @@ li .active-kosar a {
 
 .c-body{
     padding: 0.6vw;
+    overflow: hidden; /* ez tünteti el a kartyat */
 }
 
 .cardhr {
@@ -306,16 +308,16 @@ li .active-kosar a {
 .c-body h5 {
     font-size: 1.8vw;
     font-weight: bold;
-    overflow-x: visible;
 }
 
 .c-body h5:hover {
     animation: title-scroll 5s linear infinite;
+    width: 100%;
 }
 
 @keyframes title-scroll {
     from {
-
+        transform: translateX(0);
     }
     to {
         transform: translateX(-100%);
@@ -334,7 +336,7 @@ li .active-kosar a {
     border: 1.5px solid black;
     border-radius: 50px;
     background-color: rgb(2, 245, 241);
-    position: relative;
+    position: relative; /* gyakorlatilag a relative pozíción kívül minden más megjeleníti */
     float: right;
     top: 7.2vw;
     transition: all 1s;
@@ -416,7 +418,7 @@ a {
 
 .card-list {
     display: flex;
-    padding: 3rem;
+    padding: 3rem 3rem 2rem 3rem;
     overflow-x: scroll;
     scrollbar-width: 0%;
 }
@@ -507,16 +509,18 @@ a {
     align-self: start;
     position: relative;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .author-avatar img {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-    filter: grayscale(100%);
     display: block;
     overflow: hidden;
-    margin: 16px 10px;
+    margin: 16px 7.5px;
+    object-fit: cover;
+    object-position: 0 10%;
 }
 
 .author-name {
@@ -554,9 +558,11 @@ a {
     margin-bottom: 0;
 }
 
-.tags .insta, .tags .projekt {
+.insta, .projekt, .github {
     display: flex;
+    justify-content: center;
     height: 20px;
+    width: 20px;
     align-items: center;
     font-style: normal;
     font-weight: 700;
@@ -570,7 +576,7 @@ a {
     position: relative;
 }
 
-.tags .projekt:hover, .tags .insta:hover {
+.projekt:hover, .insta:hover, .github:hover {
     background: linear-gradient(90deg,#ff8a00,#e52e71);
     text-shadow: none;
     -webkit-text-fill-color: transparent;
@@ -578,9 +584,16 @@ a {
     background-clip: text;
 }
 
+.projekt {
+    font-size: 100%;
+}
+
 .insta-logo {
-    fill: #7a7a8c;
     font-size: 150%;
+}
+
+.github {
+    font-size: 100%;
 }
 
 /* Egyéb */
