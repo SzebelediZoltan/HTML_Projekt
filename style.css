@@ -102,7 +102,7 @@ li .active-kosar a {
 .kosar-irany{
     text-align: center;
     margin-bottom: 2%;
-    color: #1b1b1b;
+    color: #b3b3b3;
     font-size: 1.3em;
 }
 
@@ -178,6 +178,29 @@ li .active-kosar a {
 .kosar-ar .kosar-kupon {
     margin-top: 2%;
     color:#7a7a8c;
+}
+
+.kosar-tb {
+    width: 100%;
+}
+
+.kosar-term {
+    padding: 1%;
+}
+
+.kosar-tb-cim th {
+    padding-bottom: 0.7%;
+    font-size: 1.5em;
+    text-align: start;
+    font-weight: bold;
+}
+
+.kosar-tb-stat td{
+    border-bottom: white dashed 2px;
+}
+
+.kosar-tb-term td{
+    padding-top: 1%;
 }
 
 /* PRODUCTS: filter, holder */
