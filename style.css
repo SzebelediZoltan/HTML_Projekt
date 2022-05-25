@@ -344,6 +344,7 @@ li .active-kosar a {
     position: relative;
     float: left;
     top: 7.7vw;
+    font-weight: lighter;
     font-size: 1.6em;
     color: rgb(6, 183, 0);
 }
