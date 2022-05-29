@@ -294,10 +294,6 @@ li .active-kosar a {
     transform: scale(1.05)
 }
 
-.c-ar-vas {
-    
-}
-
 .c-img {
     width: 100%;
     border-radius: 8px 8px 0 0;
@@ -357,7 +353,7 @@ li .active-kosar a {
 
 /* home, users, cart*/
 
-.h-main, .u-main, .c-main{
+.h-main, .c-main{
     height: 100vh;
 }
 
@@ -411,6 +407,10 @@ li .active-kosar a {
 }
 
 /* users */
+
+.u-main {
+    height: 100%;
+}
 
 a {
     text-decoration: none;
@@ -558,11 +558,11 @@ a {
     margin-bottom: 0;
 }
 
-.insta, .projekt, .github {
+.insta, .tiktok, .github {
     display: flex;
     justify-content: center;
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 35px;
     align-items: center;
     font-style: normal;
     font-weight: 700;
@@ -576,7 +576,7 @@ a {
     position: relative;
 }
 
-.projekt:hover, .insta:hover, .github:hover {
+.tiktok:hover, .insta:hover, .github:hover {
     background: linear-gradient(90deg,#ff8a00,#e52e71);
     text-shadow: none;
     -webkit-text-fill-color: transparent;
@@ -584,12 +584,12 @@ a {
     background-clip: text;
 }
 
-.projekt, .github {
-    font-size: 100%;
+.tiktok, .github {
+    font-size: 150%;
 }
 
 .insta-logo {
-    font-size: 150%;
+    font-size: 200%;
 }
 
 /* Egyéb */
@@ -613,17 +613,19 @@ a {
 
 /* termékek v2 */
 
+.p2-b {
+    margin: 1%;
+}
+
 .card2-container {
     background: linear-gradient(to bottom, #1a2323, 70%, transparent);
-    width: 78vw;
-    margin: 1% 1% 1% auto;
     border: 2px solid #1a2323;
     border-radius: 10px;
-    display: grid;
-    padding: 1rem;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-auto-rows: 350px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: 1fr;
 }
 
 .c2 {
@@ -632,6 +634,9 @@ a {
     border-radius: 10px;
     border: #1a2323 solid 2px;
     overflow: hidden;
+    height: 450px;
+    max-width: 400px;
+    margin: auto;
 }
 
 .c2:hover {
@@ -660,7 +665,6 @@ a {
 
 .c2:hover h3 {
     animation: title-scroll 5s linear infinite;
-
 }
 
 @keyframes title-scroll {
@@ -670,4 +674,4 @@ a {
     to {
         transform: translateX(-100%); 
     }
-  }
+}
