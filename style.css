@@ -605,7 +605,7 @@ a {
     background-color: #353535;
 }
 
-#top-btn>svg {
+#top-btn svg {
     height: 40px;
     filter: invert(1);
 }
@@ -624,8 +624,8 @@ a {
     gap: 1rem;
     padding: 1rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-auto-rows: 350fr;
 }
 
 .c2 {
@@ -634,8 +634,8 @@ a {
     border-radius: 10px;
     border: #1a2323 solid 2px;
     overflow: hidden;
-    height: 450px;
-    max-width: 400px;
+    height: 350px;
+    max-width: 300px;
     margin: auto;
 }
 
@@ -674,4 +674,36 @@ a {
     to {
         transform: translateX(-100%); 
     }
+}
+
+footer {
+    border-top: 2px solid grey;
+    color: #000;
+    height: 30vh;
+    background-color: white;
+}
+
+footer>div {
+    display: flex;
+    height: auto;
+    justify-content: start;
+    padding: 40px;
+}
+
+footer>div>div {
+    width: 20%;
+}
+
+footer ul {
+    list-style: none;
+    line-height: 1.5rem;
+}
+
+footer ul li:hover {
+    text-decoration: underline 1px black;
+}
+
+footer ul li:first-child {
+    font-weight: bold;
+    line-height: 2rem;
 }
