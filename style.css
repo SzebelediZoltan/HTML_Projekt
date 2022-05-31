@@ -28,7 +28,7 @@ body {
 
 header {
     display: flex;
-    height: 7vh;
+    height: 5vh;
     justify-content: space-between;
     align-items: center;
     margin-top: 1%;
@@ -357,6 +357,16 @@ li .active-kosar a {
     height: 100vh;
 }
 
+.section1 {
+    height: 100vh;
+}
+
+.section2 {
+    background-color: #e52e71;
+    height: 40vh;
+
+}
+
 /* home */
 
 .h-h1 {
@@ -624,14 +634,13 @@ a {
     gap: 1rem;
     padding: 1rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-auto-rows: 350fr;
 }
 
 .c2 {
     color: #000;
     background-color: white;
-    border-radius: 10px;
     border: #1a2323 solid 2px;
     overflow: hidden;
     height: 350px;
@@ -648,7 +657,6 @@ a {
 
 .c2-img {
     width: 100%;
-    border-radius: 8px 8px 0 0;
 }
 
 .hr2 {
