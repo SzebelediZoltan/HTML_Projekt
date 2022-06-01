@@ -24,6 +24,33 @@ body {
     background-attachment: fixed, fixed;
 }
 
+/* .wrapper {
+    animation: scroll 70s linear infinite;
+    background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"), #111111;
+    color: #eee;
+    height: 10vh;
+    min-width: 360px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+  }
+  
+  @keyframes scroll {
+     100%{
+      background-position:0px -3000px;
+    }
+  }
+  
+  @media (prefers-reduced-motion) {
+    .wrapper {
+      animation: scroll 200s linear infinite;
+    }
+  } */
+
+  
 /* nav-bar */
 
 header {
@@ -642,8 +669,10 @@ a {
     color: #000;
     background-color: white;
     border: #1a2323 solid 2px;
+    border-radius: 8px;
     overflow: hidden;
     height: 350px;
+    width: 100%;
     max-width: 300px;
     margin: auto;
 }
@@ -655,8 +684,12 @@ a {
     transition: all 0.5s;
 }
 
-.c2-img {
+.c2-h {
     width: 100%;
+    height: 60%;
+    background-image: url(képek/objects.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .hr2 {
@@ -664,6 +697,7 @@ a {
 }
 
 .c2-b {
+    height: 100%;
     padding: 0.6vw;
 }
 
@@ -684,34 +718,61 @@ a {
     }
 }
 
-footer {
+.main-f {
     border-top: 2px solid grey;
     color: #000;
-    height: 30vh;
-    background-color: white;
+    height: 30%;
+    background-color: #fff;
 }
 
-footer>div {
+.main-f>div {
     display: flex;
-    height: auto;
+    height: 100%;
     justify-content: start;
-    padding: 40px;
+    padding: 30px;
+    background-color: #fff;
 }
 
-footer>div>div {
+.main-f>div>div {
     width: 20%;
 }
 
-footer ul {
+.main-f ul {
     list-style: none;
     line-height: 1.5rem;
 }
 
-footer ul li:hover {
+.main-f ul li:hover {
     text-decoration: underline 1px black;
 }
 
-footer ul li:first-child {
+.main-f ul li:first-child {
     font-weight: bold;
     line-height: 2rem;
+}
+
+.bi-bag-plus {
+    color: #fff;
+    font-size: 130%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: #617fd6;
+    position: relative;
+    top: 10%;
+    left: 80%;
+}
+
+.c2-b>div {
+    position: relative;
+    top: 10%;
+}
+
+.ár {
+    width: max-content;
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    color: #28242f;
 }
